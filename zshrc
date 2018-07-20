@@ -56,6 +56,9 @@ plugins=(sublime sudo web-search brew zsh-syntax-highlighting git)
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/MacGPG2/bin:/Applications/VMware Fusion.app/Contents/Library"
 # export MANPATH="/usr/local/man:$MANPATH"
 
+export PATH="/usr/local/sbin:$PATH"
+export PATH=/usr/local/bin:$PATH
+
 # Auto update
 DISABLE_UPDATE_PROMPT=true
 
@@ -100,9 +103,6 @@ if [ -d "/Applications/VMware Fusion.app/Contents/Library" ]; then
     export PATH=$PATH:"/Applications/VMware Fusion.app/Contents/Library"
 fi
 
-export PATH="/usr/local/sbin:$PATH"
-export PATH=/usr/local/bin:$PATH
-
 # Homebrew settings
 # export HOMEBREW_BUILD_FROM_SOURCE=1
 export HOMEBREW_NO_AUTO_UPDATE=1
@@ -136,8 +136,6 @@ alias debian='ssh ladmin@192.168.74.178'
 alias debianon='vmrun start ~/Documents/Virtual\ Machines.localized/debian8.vmwarevm/debian8.vmx nogui'
 alias kalion='vmrun start ~/Documents/Virtual\ Machines.localized/kali.vmwarevm/kali.vmx nogui'
 # NO GUI alias kali='vmrun start ~/Documents/Virtual\ Machines.localized/kali.vmwarevm/kali.vmx nogui'
-
-alias phish='curl https://vpn-secure.org 2>/dev/null | grep -q 'insight\.duo\.com' && echo "Duo phishing"'
 
 alias speedtest='wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip'
 
