@@ -141,8 +141,6 @@ alias phish='curl https://vpn-secure.org 2>/dev/null | grep -q 'insight\.duo\.co
 
 alias speedtest='wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip'
 
-alias code='oathtool -d 8 -c 1004 3132333435363738393031323334353637383007'
-
 alias m='vmrun start ~/Documents/Virtual\ Machines.localized/m.vmwarevm/m.vmx'
 alias ms='vmrun suspend ~/Documents/Virtual\ Machines.localized/m.vmwarevm/m.vmx soft'
 
