@@ -1,0 +1,22 @@
+startup_message off
+vbell off
+autodetach on
+altscreen on
+shelltitle '$ |bash'
+shell bash
+defscrollback 100000
+#defutf8 on
+nonblock on
+
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{= 9w}%-w%{.rW}%n %t%{-}%+w %=%{..G} %{B}%H %{..Y} %d/%m %C%a "
+#hardstatus string "%{= kG}%-w%{.rW}%n %t%{-}%+w %=%{..G} %{B}%H %{..Y} %m/%d %C%a "
+termcapinfo xterm ti@:te@
+
+#logfile /home/YOUR_USERNAME/screenlog/log.%d-%m-%Y.%n.log
+deflog on
+
+bind 'q' quitd
+
+# syntax: screen -t label order comman
